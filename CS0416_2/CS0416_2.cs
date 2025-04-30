@@ -31,7 +31,7 @@
                 Width = width;
                 Height = height;
             }
-
+            
             public int Area()
             {
                 return this.width * this.height;
@@ -41,7 +41,11 @@
 
         static void Main(string[] args)
         {
-            
+            Box box = new Box(10, 10);
+            Console.WriteLine(box.Area());
+            box.Height = 15;
+            box.Width = 15;
+            Console.WriteLine(box.Area());
         }
     }
 }
